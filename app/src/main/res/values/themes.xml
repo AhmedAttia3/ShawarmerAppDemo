@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Shawarmer" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primaryColor</item>
+        <item name="colorSecondaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/primaryColor</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Customize your theme here. -->
+
+        <item name="fontFamily">@font/segoe_regular</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Progress.White" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--        <item name="colorAccent">@android:color/purple_500</item>-->
+        <item name="colorSecondary">@color/white</item>
+    </style>
+
+    <style name="Progress.green" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--        <item name="colorAccent">@android:color/purple_500</item>-->
+        <item name="colorPrimary">#42C669</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+
+    <!-- Custom checkout theme -->
+    <style name="CustomCheckoutTheme" parent="Theme.Checkout.Light">
+        <item name="colorAccent">@color/primaryColor</item>
+        <item name="headerBackground">@color/primaryColor</item>
+    </style>
+</resources>

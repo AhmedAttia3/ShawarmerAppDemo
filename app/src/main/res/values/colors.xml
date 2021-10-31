@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#E57B09</color>
+    <color name="primaryDarkColor">#E57B09</color>
+    <color name="primaryLight">#E1A25E</color>
+    <color name="secondaryColor">#ffce0e</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="offWhite">#F5F5F5</color>
+    <color name="off_white">#EAEAEA</color>
+    <color name="grayDark">#707070</color>
+    <color name="successColor">#28A745</color>
+    <color name="dangerColor">#DC3545</color>
+    <color name="warningColor">#FFC107</color>
+    <color name="hintTextColor">#707070</color>
+
+</resources>

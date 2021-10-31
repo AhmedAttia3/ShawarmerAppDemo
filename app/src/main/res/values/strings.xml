@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Shawarmer</string>
+    <string name="callback_scheme">shawarmer</string>
+
+    <string name="dish_name">Dish Name</string>
+    <string name="dish_price">Dish Price</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="total">Total:</string>
+    <string name="price">Price: </string>
+    <string name="totalPrice">Total Price:</string>
+    <string name="cart_message">Your dishes are in the shopping cart</string>
+    <string name="emptyCart">Your Cart Still Empty</string>
+    <string name="goToShopping">Go To Shopping</string>
+    <string name="checkout">Checkout</string>
+    <string name="test_description">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="in_cart">This dish is in your shopping cart</string>
+    <string name="goToCart">Go To Cart</string>
+    <string name="general_error">Something Error</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="topDishes">Top Dishes</string>
+    <string name="emptyDishesList">There are no dishes available right now</string>
+    <string name="sar_currency">SAR</string>
+    <string name="my_cart">My Cart</string>
+    <string name="payment_button_callback_scheme">paymentbutton</string>
+    <string name="custom_ui_callback_scheme">customui</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_pay_now">PAY NOW</string>
+    <string name="message_unsuccessful_payment">"The payment was <b>unsuccessful</b>"</string>
+    <string name="error_message">An error occurred</string>
+    <string name="place_order_canceled">Place order canceled</string>
+    <string name="pace_order">Place Order</string>
+    <string name="deliver_address">Delivery address</string>
+    <string name="deliver_to">Deliver to</string>
+    <string name="add_delivery_address">Add delivery address</string>
+    <string name="items">Items</string>
+    <string name="promocode">Promocode</string>
+    <string name="add_promocode">Add Promocode</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery_fees">Delivery fess</string>
+    <string name="tax">Tax</string>
+    <string name="success_payment">You have a successful payment transaction, You can tracking your order now</string>
+    <string name="track_order">Track Your Order</string>
+    <string name="orderTracking">Order tracking</string>
+    <string name="join_us">Join our community</string>
+    <string name="join_us_message">Signup to get the most out of shawarmer.</string>
+    <string name="create_account">Create account</string>
+    <string name="already_have_account">Already have an account</string>
+
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.shawarmer.app.ui.splash.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/splash_fragment">
+
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.shawarmer.app.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_dishDetailsFragment"
+            app:destination="@id/dishDetailsFragment"
+            app:enterAnim="@anim/enter_from_bottom"
+            app:exitAnim="@anim/fade"
+            app:popEnterAnim="@anim/fade"
+            app:popExitAnim="@anim/exit_to_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/dishDetailsFragment"
+        android:name="com.shawarmer.app.ui.dishDetails.DishDetailsFragment"
+        android:label="dish_details_fragment"
+        tools:layout="@layout/dish_details_fragment">
+        <argument
+            android:name="dish"
+            app:argType="com.shawarmer.app.data.model.DishModel" />
+    </fragment>
+
+
+    <action
+        android:id="@+id/global_action_to_cart_fragment"
+        app:destination="@id/cartFragment"
+        app:enterAnim="@anim/enter_from_bottom"
+        app:exitAnim="@anim/fade"
+        app:popEnterAnim="@anim/fade"
+        app:popExitAnim="@anim/exit_to_bottom" />
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.shawarmer.app.ui.home.cart.CartFragment"
+        android:label="cart_fragment"
+        tools:layout="@layout/cart_fragment">
+        <argument
+            android:name="isBackBtnDisabled"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+
+    <action
+        android:id="@+id/global_action_to_checkout_fragment"
+        app:destination="@id/checkoutFragment"
+        app:enterAnim="@anim/enter_from_right"
+        app:exitAnim="@anim/exit_to_left"
+        app:popEnterAnim="@anim/enter_from_left"
+        app:popExitAnim="@anim/exit_to_right" />
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.shawarmer.app.ui.checkout.CheckoutFragment"
+        android:label="checkout_fragment"
+        tools:layout="@layout/checkout_fragment">
+        <argument
+            android:name="amount"
+            android:defaultValue="10"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_checkoutFragment_to_orderTrackingFragment"
+            app:destination="@id/orderTrackingFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/checkoutFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderTrackingFragment"
+        android:name="com.shawarmer.app.ui.orderTracking.OrderTrackingFragment"
+        android:label="OrderTrackingFragment"
+        tools:layout="@layout/order_tracking_fragment" />
+</navigation>

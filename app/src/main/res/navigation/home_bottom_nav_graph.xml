@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bottom_nav_graph.xml"
+    app:startDestination="@id/subHomeFragment">
+
+    <fragment
+        android:id="@+id/subHomeFragment"
+        android:name="com.shawarmer.app.ui.home.subHome.SubHomeFragment"
+        android:label="SubHomeFragment"
+        tools:layout="@layout/sub_home_fragment"/>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.shawarmer.app.ui.home.cart.CartFragment"
+        android:label="cart_fragment"
+        tools:layout="@layout/cart_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.shawarmer.app.ui.home.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment"/>
+</navigation>

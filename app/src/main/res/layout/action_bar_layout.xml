@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="kotlin.jvm.functions.Function0" />
+        <import type="kotlin.Unit" />
+        <import type="android.view.View" />
+        <variable
+            name="pageTitle"
+            type="String" />
+        <variable
+            name="isBackBtnDisabled"
+            type="Boolean" />
+        <variable
+            name="backBtnClick"
+            type="Function0&lt;Unit>" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="8dp"
+            android:visibility="@{!isBackBtnDisabled ? View.VISIBLE : View.GONE, default=visible}"
+            android:onClick="@{()->backBtnClick.invoke()}"
+            android:layout_marginStart="4dp"
+
+            app:tint="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:lines="1"
+            android:text="@{pageTitle}"
+            android:ellipsize="end"
+            android:maxWidth="260dp"
+            tools:text=" TitlePage Title"
+            android:textColor="@color/primaryColor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
